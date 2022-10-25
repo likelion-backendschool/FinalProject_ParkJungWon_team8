@@ -1,11 +1,11 @@
 package com.ll.exam.final__2022_10_08.service;
 
 
-import com.ll.exam.final__2022_10_08.app.base.dto.RsData;
-import com.ll.exam.final__2022_10_08.app.emailVerification.service.EmailVerificationService;
-import com.ll.exam.final__2022_10_08.app.member.entity.Member;
-import com.ll.exam.final__2022_10_08.app.member.service.MemberService;
-import com.ll.exam.final__2022_10_08.util.Ut;
+import com.ll.exam.ebook_market.app.base.dto.RsData;
+import com.ll.exam.ebook_market.app.emailVerification.service.EmailVerificationService;
+import com.ll.exam.ebook_market.app.member.entity.Member;
+import com.ll.exam.ebook_market.app.member.service.MemberService;
+import com.ll.exam.ebook_market.util.Ut;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

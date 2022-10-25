@@ -1,7 +1,7 @@
 package com.ll.exam.final__2022_10_08.service;
 
-import com.ll.exam.final__2022_10_08.app.base.dto.RsData;
-import com.ll.exam.final__2022_10_08.app.email.service.EmailService;
+import com.ll.exam.ebook_market.app.base.dto.RsData;
+import com.ll.exam.ebook_market.app.email.service.EmailService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

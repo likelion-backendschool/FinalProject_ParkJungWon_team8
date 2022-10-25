@@ -1,10 +1,10 @@
 package com.ll.exam.final__2022_10_08.service;
 
-import com.ll.exam.final__2022_10_08.app.member.entity.Member;
-import com.ll.exam.final__2022_10_08.app.member.repository.MemberRepository;
-import com.ll.exam.final__2022_10_08.app.post.entity.Post;
-import com.ll.exam.final__2022_10_08.app.post.service.PostService;
-import com.ll.exam.final__2022_10_08.app.postTag.entity.PostTag;
+import com.ll.exam.ebook_market.app.member.entity.Member;
+import com.ll.exam.ebook_market.app.member.repository.MemberRepository;
+import com.ll.exam.ebook_market.app.post.entity.Post;
+import com.ll.exam.ebook_market.app.post.service.PostService;
+import com.ll.exam.ebook_market.app.postTag.entity.PostTag;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
