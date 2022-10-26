@@ -1,7 +1,7 @@
 package com.ll.exam.final__2022_10_08.controller;
 
-import com.ll.exam.ebook_market.app.member.controller.MemberController;
-import com.ll.exam.ebook_market.app.member.service.MemberService;
+import com.ll.exam.final__2022_10_08.app.member.controller.MemberController;
+import com.ll.exam.final__2022_10_08.app.member.service.MemberService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
