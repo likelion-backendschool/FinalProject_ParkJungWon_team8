@@ -8,6 +8,7 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
@@ -27,5 +28,14 @@ public class CartController {
         model.addAttribute("cartItems", cartItems);
 
         return "cart/list";
+    }
+
+    @GetMapping("/remove/{id}")
+    public String remove(@PathVariable Long id) {
+
+        cartService.deleteItem(id);
+
+        return "redirect:/cart/list";
+
     }
 }

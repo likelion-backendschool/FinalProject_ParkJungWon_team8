@@ -18,4 +18,10 @@ public class CartService {
         return cartItemRepository.findAllByMemberId(memberId);
 
     }
+
+    public void deleteItem(Long cartItemId) {
+
+        cartItemRepository.deleteById(cartItemId);
+
+    }
 }
