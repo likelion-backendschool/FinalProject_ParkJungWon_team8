@@ -26,7 +26,7 @@
                 <div class="badge badge-outline">
                     <i class="fa-solid fa-pen"></i>
                     <span class="ml-2"
-                          th:text="${#temporals.format(product.createDate, 'yy-MM-dd HH:mm')}"></span>
+                          th:text="${#temporals.format(cartItem.product.createDate, 'yy-MM-dd HH:mm')}"></span>
                 </div>
             </div>
             <div th:if="${cartItem.product.createDate != cartItem.product.modifyDate}" class="flex justify-end">

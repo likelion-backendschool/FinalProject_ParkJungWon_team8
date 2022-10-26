@@ -4,6 +4,8 @@ import com.ll.exam.final__2022_10_08.app.cart.entity.CartItem;
 import com.ll.exam.final__2022_10_08.app.cart.service.CartService;
 import com.ll.exam.final__2022_10_08.app.security.dto.MemberContext;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -40,10 +42,12 @@ public class CartController {
 
     }
 
-    @PostMapping("/add/{id}")
+    @GetMapping("/add/{id}")
     public String addItem(@PathVariable Long id, @AuthenticationPrincipal MemberContext memberContext) {
 
-        cartService.addItem()
+        CartItem cartItem = cartService.addItem(memberContext.getMember(), id);
+
+        return "redirect:/cart/list";
     }
 
 }
